@@ -9,8 +9,11 @@ function PrepTasksSection({ tasks }) {
       />
 
       <div className="prep-grid">
-        {tasks.map((task) => (
+        {tasks.map((task, index) => (
           <article className="prep-card" key={task.title}>
+            <p className="task-tag">
+              Checkpoint {String(index + 1).padStart(2, "0")}
+            </p>
             <h3>{task.title}</h3>
             <p>{task.description}</p>
             <a href={task.href} target="_blank" rel="noreferrer">

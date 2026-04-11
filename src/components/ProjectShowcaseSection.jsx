@@ -9,11 +9,16 @@ function ProjectShowcaseSection({ assignments }) {
       />
 
       <div className="projects-grid">
-        {assignments.map((assignment) => (
+        {assignments.map((assignment, index) => (
           <article className="project-card" key={assignment.nickname}>
-            <p className="project-nickname">{assignment.nickname}</p>
+            <div className="project-card-top">
+              <p className="project-nickname">{assignment.nickname}</p>
+              <span className="assignment-id">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+            </div>
             <h3>{assignment.project}</h3>
-            <p>{assignment.fullName}</p>
+            <p className="project-owner">{assignment.fullName}</p>
           </article>
         ))}
       </div>

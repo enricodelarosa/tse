@@ -10,8 +10,8 @@ function MeetupTimelineSection({ meetups }) {
       />
 
       <div className="timeline-grid">
-        {meetups.map((meetup) => (
-          <MeetupCard key={meetup.date} meetup={meetup} />
+        {meetups.map((meetup, index) => (
+          <MeetupCard key={meetup.date} meetup={meetup} sequence={index + 1} />
         ))}
       </div>
     </section>

@@ -1,20 +1,33 @@
-function MeetupCard({ meetup }) {
+function MeetupCard({ meetup, sequence }) {
   return (
     <article className="timeline-card">
-      <img
-        className="timeline-photo"
-        src={meetup.image}
-        alt={meetup.imageAlt}
-        loading="lazy"
-      />
+      <div className="timeline-media">
+        <img
+          className="timeline-photo"
+          src={meetup.image}
+          alt={meetup.imageAlt}
+          loading="lazy"
+        />
+        <p className="timeline-badge">
+          Operation {String(sequence).padStart(2, "0")}
+        </p>
+      </div>
       <div className="timeline-body">
-        <p className="date-pill">{meetup.date}</p>
+        <div className="timeline-header">
+          <p className="date-pill">{meetup.date}</p>
+          <span className="timeline-status">Completed</span>
+        </div>
         <h3>{meetup.title}</h3>
-        <p>{meetup.summary}</p>
+        <p className="timeline-copy">{meetup.summary}</p>
         <p>{meetup.details}</p>
         <div className="resource-links">
           {meetup.links.map((link) => (
-            <a key={link.label} href={link.href} target="_blank" rel="noreferrer">
+            <a
+              key={link.label}
+              href={link.href}
+              target="_blank"
+              rel="noreferrer"
+            >
               {link.label}
             </a>
           ))}
