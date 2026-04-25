@@ -2,10 +2,15 @@ import SectionHeading from "./SectionHeading";
 
 function ProjectShowcaseSection({ assignments }) {
   return (
-    <section className="section-block showcase-panel">
+    <section
+      id="projects"
+      className="section-block showcase-panel"
+      aria-labelledby="projects-heading"
+    >
       <SectionHeading
         kicker="May 2, 2026"
         title="Assigned React projects for experience and showcase"
+        headingId="projects-heading"
       />
 
       <div className="projects-grid">
