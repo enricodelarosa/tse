@@ -3,10 +3,15 @@ import SectionHeading from "./SectionHeading";
 
 function MeetupTimelineSection({ meetups }) {
   return (
-    <section className="section-block">
+    <section
+      id="timeline"
+      className="section-block"
+      aria-labelledby="timeline-heading"
+    >
       <SectionHeading
         kicker="Meetup Timeline"
         title="The first two sessions"
+        headingId="timeline-heading"
       />
 
       <div className="timeline-grid">

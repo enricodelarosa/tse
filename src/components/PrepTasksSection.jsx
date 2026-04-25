@@ -2,10 +2,15 @@ import SectionHeading from "./SectionHeading";
 
 function PrepTasksSection({ tasks }) {
   return (
-    <section className="section-block prep-panel">
+    <section
+      id="setup"
+      className="section-block prep-panel"
+      aria-labelledby="setup-heading"
+    >
       <SectionHeading
         kicker="Before The Next Session"
         title="Setup tasks for the group"
+        headingId="setup-heading"
       />
 
       <div className="prep-grid">

@@ -1,10 +1,14 @@
 function HeroSection({ stats }) {
   return (
-    <section className="hero-panel">
+    <section
+      id="overview"
+      className="hero-panel"
+      aria-labelledby="overview-heading"
+    >
       <div className="hero-layout">
         <div className="hero-content">
           <p className="eyebrow">Local builders from Tandag, Surigao del Sur</p>
-          <h1>Tandag Software Engineers</h1>
+          <h1 id="overview-heading">Tandag Software Engineers</h1>
           <p className="hero-copy">
             Started by remote developers and computer science students, the
             group is building a local space for learning, shipping, and sharing

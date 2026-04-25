@@ -44,6 +44,7 @@
 .section-block {
   position: relative;
   overflow: hidden;
+  scroll-margin-top: 24px;
   clip-path: polygon(0 0, calc(100% - 34px) 0, 100% 34px, 100% 100%, 28px 100%, 0 calc(100% - 28px));
   border: 2px solid var(--border);
   box-shadow: var(--shadow);
