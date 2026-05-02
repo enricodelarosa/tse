@@ -1,18 +1,19 @@
 const meetupPhotos = {
   march: "/meetup-photos/1st-meetup.jpg",
   april: "/meetup-photos/2nd-meetup.jpg",
+  may: "/meetup-photos/3rd-meetup.jpg",
 };
 
 export const heroStats = [
   {
     label: "Founded Through Meetups",
-    value: "2 technical meetups completed",
-    description: "March 20, 2026 and April 11, 2026",
+    value: "3 technical meetups completed",
+    description: "March 20, April 11, and May 2, 2026",
   },
   {
     label: "Next Meetup",
-    value: "May 2, 2026",
-    description: "React project experience and showcase check-in",
+    value: "TBA",
+    description: "The next local session will be announced after planning",
   },
   {
     label: "Community Mix",
@@ -60,6 +61,23 @@ export const meetupRecaps = [
       },
     ],
   },
+  {
+    date: "May 2, 2026",
+    title: "React App Demo And AI Learning Discussion",
+    summary:
+      "The third meetup centered on a demo of the group's React app and a practical discussion about using AI while learning software development.",
+    details:
+      "The group talked through how AI can speed up building, where it can bypass important fundamentals, and how to keep learning active while using modern coding tools.",
+    image: meetupPhotos.may,
+    imageAlt:
+      "Members of Tandag Software Engineers during the May 2, 2026 meetup.",
+    links: [
+      {
+        label: "React",
+        href: "https://react.dev/",
+      },
+    ],
+  },
 ];
 
 export const prepTasks = [
@@ -99,5 +117,15 @@ export const projectAssignments = [
     nickname: "Spidey",
     fullName: "Spidey Brads Evangelista",
     project: "Flower Identification Platform / Watering Tracking",
+  },
+  {
+    nickname: "Jhundel",
+    fullName: "Jhundel Azarcon Bou",
+    project: "Shortest Route Identifier",
+  },
+  {
+    nickname: "Kevinn",
+    fullName: "Kevinn Ramoso",
+    project: "Community Relief App",
   },
 ];

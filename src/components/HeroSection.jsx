@@ -17,7 +17,7 @@ function HeroSection({ stats }) {
           <div className="hero-actions">
             <span className="hero-chip">Remote devs + CS students</span>
             <span className="hero-chip">Hands-on React cycle active</span>
-            <span className="hero-chip">Next meetup: May 2, 2026</span>
+            <span className="hero-chip">Next meetup: TBA</span>
           </div>
         </div>
 
@@ -27,8 +27,8 @@ function HeroSection({ stats }) {
             Build a local pipeline for learning and shipping together.
           </p>
           <p className="brief-copy">
-            Each meetup adds one layer: shared tools, hands-on demos, then
-            individual projects ready for live showcase.
+            Each meetup adds one layer: shared tools, hands-on demos, project
+            walkthroughs, and better judgment around AI-assisted learning.
           </p>
           <div className="brief-tracks">
             <div className="brief-track">

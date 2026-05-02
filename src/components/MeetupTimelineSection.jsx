@@ -10,7 +10,7 @@ function MeetupTimelineSection({ meetups }) {
     >
       <SectionHeading
         kicker="Meetup Timeline"
-        title="The first two sessions"
+        title="The first three sessions"
         headingId="timeline-heading"
       />
 
