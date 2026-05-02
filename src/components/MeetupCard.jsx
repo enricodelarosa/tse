@@ -15,7 +15,7 @@ function MeetupCard({ meetup, sequence }) {
       <div className="timeline-body">
         <div className="timeline-header">
           <p className="date-pill">{meetup.date}</p>
-          <span className="timeline-status">Completed</span>
+          <span className="timeline-status">Finished</span>
         </div>
         <h3>{meetup.title}</h3>
         <p className="timeline-copy">{meetup.summary}</p>
